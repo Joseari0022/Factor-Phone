@@ -33,6 +33,16 @@ namespace BLL
             }
         }
 
+        public static Usuarios Buscar(Expression<Func<Entidades.Usuarios, bool>> Busqueda)
+        {
+            Usuarios Result = null;
+            using (var repoitorio = new Repositorio<Usuarios>())
+            {
+                Result = repoitorio.Buscar(Busqueda);
+            }
+            return Result;
+        }
+
         public static bool Modificar(Usuarios usuarios)
         {
             bool modifica = false;
@@ -41,6 +51,16 @@ namespace BLL
                 modifica = reposi.Modificar(usuarios);
             }
             return modifica;
+        }
+
+        public static bool Eliminar(Usuarios usuario)
+        {
+            bool eliminado = false;
+            using (var reposi = new Repositorio<Usuarios>())
+            {
+                eliminado = reposi.Eliminar(usuario);
+            }
+            return eliminado;
         }
 
         public static List<Usuarios> Listar(Expression<Func<Usuarios, bool>> Busqueda)
