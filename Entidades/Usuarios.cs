@@ -10,8 +10,8 @@ namespace Entidades
     public class Usuarios
     {
         [Key]
-        public int IdUsuario { get; set; }
-        public string NombreUsuario { get; set; }
+        public int IdUsuarios { get; set; }
+        public string NombreUsuarios { get; set; }
         public string Nombres { get; set; }
         public string FechaCreacion { get; set; }
         public string Contrasena { get; set; }
