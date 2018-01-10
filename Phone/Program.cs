@@ -16,7 +16,7 @@ namespace Phone
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Phone.Registros.rUsuarios());
+            Application.Run(new Principal());
         }
     }
 }

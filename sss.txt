@@ -1,0 +1,15 @@
+<h1>Usuarios</h1>
+<table>
+         <tr>
+             <td><strong>Nombre:</strong></td>
+             <td><input id="Text1" type="text" /> </td>
+         </tr>
+            <tr>
+              <td><strong>Clave:</strong></td>
+              <td><input id="Text2" type="text" /> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input id="GuardarButton" type="button" value="Guardar" /> </td>
+            </tr>
+        </table>
